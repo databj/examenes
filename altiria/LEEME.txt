@@ -1,0 +1,104 @@
+ÍNDICE DE FICHEROS
+
+Carpeta http: contiene los códigos de ejemplo de la pasarela HTTP. Se trata en general de la pasarela más sencilla de integrar, por tanto la opción recomendable por defecto.	
+
+ - httpPHPAltiria.php: ejemplo de integración en PHP usando la librería CURL.
+ - testAltiriaSms.php: código que llama a la función del archivo httpPHPAltiria.php.
+ - httpPHPAltiriaSoket.php: ejemplo de integración en PHP abriendo directamente un socket sobre la URL del servidor.
+ - HttpJavaAltiria.java: ejemplo de integración en Java usando la librería HttpClient.
+ - Carpeta lib: librerías auxliares necesarias para el ejemplo en Java. Contiene la licencia de uso.
+ - HttpCSWRAltiria.cs: ejemplo de integración en Visual C# usando la librería HttpWebRequest.
+ - HttpCSHCAltiria.cs: ejemplo de integración en Visual C# usando la librería HttpClient.
+ - HttpVBWRAltiria.vb: ejemplo de integración en Visual Basic usando la librería HttpWebRequest.
+ - HttpVBHCAltiria.vb: ejemplo de integración en Visual Basic usando la librería HttpClient.
+ - HttpDelphiAltiria1.dpr: ejemplo de integración en Delphi usando la librería IdHTTP.
+ - HttpDelphiAltiria2.dpr: ejemplo de integración en Delphi usando la librería TnetHTTPClient.
+ - httpPerlAltiria.pl: ejemplo de integración en Perl usando la librería LWP::UserAgent.
+ - httpRubyAltiria.rb: ejemplo de integración en Ruby.
+ - httpPythonAltiria.py: ejemplo de integración en Python usando la librería Requests.
+ - httpNodeAltiria.js: ejemplo de integración en node.js.
+ - testAltiriaCert.php: código que llama a la función del archivo httpPHPAltiria.php para ejecutar el comando certPdfFile.
+ - httpPHPAltiriaCert.php: ejemplo de integración del comando certPdfFile en PHP usando la librería CURL.
+ - httpPHPAltiriaCertSoket.php: ejemplo de integración del comando certPdfFile en PHP abriendo directamente un socket sobre la URL del servidor.
+ - HttpJavaAltiriaCert.java: ejemplo de integración del comando certPdfFile en Java usando la librería HttpClient.
+ - httpNodeAltiriaCert.js: ejemplo de integración del comando certPdfFile en Node.
+ - httpPerlAltiriaCert.pl: ejemplo de integración del comando certPdfFile en Perl.
+ - httpPythonAltiriaCert.py: ejemplo de integración del comando certPdfFile en Python.
+ - httpRubyAltiriaCert.rb: ejemplo de integración del comando certPdfFile en Ruby.
+
+Carpeta soap: contiene los códigos de ejemplo de la pasarela de servicios web SOAP.
+
+ - soapPHPAltiria.php: ejemplo de integración en PHP usando la librería NuSOAP (SOAP 1.1).
+ - Carpeta lib: librería NuSOAP necesaria para el ejemplo en php. Contiene la licencia de uso.
+ - SoapJavaAltiria.java: ejemplo de integración en Java para SOAP 1.2.
+ - SoapVBAltiria.vb: ejemplo de integración en Visual Basic para SOAP 1.2.
+ - SoapCSAltiria.cs: ejemplo de integración en Visual C# para SOAP 1.2.
+ - soapRubyAltiria.rb: ejemplo de integración en Ruby usando la librería Savon (SOAP 1.2).
+ - soapPythonAltiria.py: ejemplo de integración en Python usando la librería Suds (SOAP 1.2).
+ - soapPerlAltiria.pl: ejemplo de integración en Perl usando la librería Soap::Lite (SOAP 1.2).
+ - SoapJavaAltiriaCert.java: ejemplo de integración del comando certPdfFile en Java para SOAP 1.2.
+ - soapPerlAltiriaCert.pl: ejemplo de integración del comando certPdfFile en Perl para SOAP 1.1.
+ - soapPHPAltiriaCert.php: ejemplo de integración del comando certPdfFile en PHP para SOAP 1.1.
+ - soapPythonAltiriaCert.py: ejemplo de integración del comando certPdfFile en Python para SOAP 1.2.
+ - soapRubyAltiriaCert.rb: ejemplo de integración del comando certPdfFile en Ruby para SOAP 1.2.
+
+Carpeta rest: contiene los códigos de ejemplo de la pasarela de recursos REST.
+
+ - restPHPAltiria.php: ejemplo de integración en PHP usando la librería CURL.
+ - RestJavaAltiria.java: ejemplo de integración en Java usando la librería HttpClient.
+ - Carpeta lib: librerías auxliares necesarias para el ejemplo en Java. Contiene la licencia de uso.
+ - restPythonAltiria.py: ejemplo de integración en Python usando la librería Requests.
+ - restRubyAltiria.rb: ejemplo de integración en Ruby.
+ - restPerlAltiria.pl: ejemplo de integración en Perl.
+ - RestJavaAltiriaCert.java: ejemplo de integración del comando certPdfFile en Java.
+ - restPerlAltiriaCert.pl: ejemplo de integración del comando certPdfFile en Perl.
+ - restPHPAltiriaCert.php: ejemplo de integración del comando certPdfFile en PHP.
+ - restPythonAltiriaCert.py ejemplo de integración del comando certPdfFile en Python.
+ - restRubyAltiriaCert.rb: ejemplo de integración del comando certPdfFile en Ruby.
+ - restVisualCAltiria.cs: ejemplo de integración en Visual C# usando la librería HttpWebRequest.
+ - restVisualBasicAltiria.vb: ejemplo de integración en Visual Basic usando la librería HttpWebRequest.
+ - restCurlAltiria-1.sh: ejemplo de integración del comando certPdfFile en CURL a través de una script de shell.
+ - restCurlAltiria-2.sh: ejemplo de subida de fichero para certificar en CURL a través de una script de shell.
+ - restCurlAltiria-3.sh: ejemplo de integración del comando checkPdfFile en CURL a través de una script de shell.
+
+INSTALACIÓN DE CADA ECOSISTEMA PARA PRUEBAS:
+
+PHP
+
+- sudo apt-get install php (v 7.0): instala PHP.
+- sudo apt-get install  php-curl: instala la librería para peticiones mediante CURL. Válida para HTTP Y REST.
+- sudo apt-get install  libnusoap-php: instala la librería para peticiones SOAP.
+- sudo apt-get install php7.0-xml: necesario para nusoap. En php 7.0 no viene instalado por defecto, como si ocurre en versiones anteriores.
+
+PERL
+
+- sudo apt-get install perl: instala Perl.
+- perl -MCPAN -e shell: acceso al instalador de paquetes. Una vez dentro se pueden instalar paquetes mediante "install module $nombre_paquete".
+- install Bundle::LWP: permite hacer peticiones HTTP. Válido también para REST.
+- install module JSON: permite codificar/descodificar json.
+- install module JSON::Parse: permite parsear json.
+- install module Try::Tiny: alternativa para gestionar los bloques try/catch.
+- install module File::Slurp: permite la lectura de ficheros.
+- install module SOAP::Lite: permite realizar peticiones SOAP.
+
+PYTHON
+
+- sudo apt-get install python3.6: instala Python en su versión 3.6. Incorpora los módulos "requests" y "json" de forma nativa.
+- sudo apt-get install python-suds: instala el cliente SOAP para Python.
+
+RUBY
+
+- sudo apt-get install ruby-full: instala Ruby. Incluye los paquete "net/http" y "uri".
+- sudo gem install json: permite instalar el módulo json a través del instalador de paquetes de Ruby.
+- sudo gem install savon: permite instalar el cliente SOAP.
+
+NODEJS
+
+- sudo apt-get install nodejs: instala NodeJs. NodeJs core incluye los siguientes módulos utilizados:
+   - http: permite realizar las peticiones HTTP y REST. 
+   - url: permite componer la URL y sus cabeceras a modo de objeto.
+   - fs: permite leer/escribir ficheros.
+
+Mediante su instalador de paquetes (npm) permite instalar librerías externas:
+- sudo npm install query-string: permite componer el cuerpo de una petición a modo de objeto.
+
