@@ -35,10 +35,11 @@ class TemaData
 	}
 
 	// partiendo de que ya tenemos creado un objecto ClienteData previamente utilizamos el contexto
-	public function update()
-	{
-		$sql = "update tema set pass='" . $this->pass . "' where id='" . $this->id . "'";
-		return	Executor::doit($sql);
+    public function update(){
+		$sql = "update ".self::$tablename." set 
+        nombre=\"$this->nombre\" 
+        where id=$this->id";
+		return Executor::doit($sql);
 	}
 
 

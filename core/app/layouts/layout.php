@@ -157,12 +157,19 @@
             <ul class="accordion-menu">
 
               <li>
-                <!---condicional para cualquier usuario diferente a empresa--->
-
-
-
-
+                <a href="#"><i data-feather="list"></i>
+                  <span>Tema</span><i class="accordion-icon fa fa-angle-left"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="index.php?view=Tema/Add_Tema">Crear temas</a></li>
+                  <li><a href="index.php?view=Tema/View_Tema">Ver temas</a></li>
+                </ul>
               </li>
+
+
+
+
+
+
 
 
             </ul>
@@ -250,35 +257,35 @@
                       </div>
                       <div class="notifications-box" id="notificationsBox">
 
-                       
 
-                          <a class="dropdown-item list-group-item" href="index.php?view=Proceso/View_Procesos_General">
-                            <div class="d-flex justify-content-between">
-                              <div class="wd-45 ht-38 mg-r-15 d-flex align-items-center justify-content-center rounded-circle card-icon-warning">
-                                <i class="fa fa-bell tx-warning tx-16"></i>
-                              </div>
-                              <div>
-                                <span>Tienes Procesos Sin Finalizar</span>
-                                <span class="small tx-gray-600 ft-right"></span>
-                                <div class="tx-gray-600 tx-11"></div>
-                              </div>
-                            </div>
-                          </a>
-                       
 
-                          <a class="dropdown-item list-group-item" href="index.php?view=Proceso/View_Procesos">
-                            <div class="d-flex justify-content-between">
-                              <div class="wd-45 ht-38 mg-r-15 d-flex align-items-center justify-content-center rounded-circle card-icon-warning">
-                                <i class="fa fa-bell tx-warning tx-16"></i>
-                              </div>
-                              <div>
-                                <span>Tienes Procesos Sin Confirmar</span>
-                                <span class="small tx-gray-600 ft-right"></span>
-                                <div class="tx-gray-600 tx-11"></div>
-                              </div>
+                        <a class="dropdown-item list-group-item" href="index.php?view=Proceso/View_Procesos_General">
+                          <div class="d-flex justify-content-between">
+                            <div class="wd-45 ht-38 mg-r-15 d-flex align-items-center justify-content-center rounded-circle card-icon-warning">
+                              <i class="fa fa-bell tx-warning tx-16"></i>
                             </div>
-                          </a>
-                       
+                            <div>
+                              <span>Tienes Procesos Sin Finalizar</span>
+                              <span class="small tx-gray-600 ft-right"></span>
+                              <div class="tx-gray-600 tx-11"></div>
+                            </div>
+                          </div>
+                        </a>
+
+
+                        <a class="dropdown-item list-group-item" href="index.php?view=Proceso/View_Procesos">
+                          <div class="d-flex justify-content-between">
+                            <div class="wd-45 ht-38 mg-r-15 d-flex align-items-center justify-content-center rounded-circle card-icon-warning">
+                              <i class="fa fa-bell tx-warning tx-16"></i>
+                            </div>
+                            <div>
+                              <span>Tienes Procesos Sin Confirmar</span>
+                              <span class="small tx-gray-600 ft-right"></span>
+                              <div class="tx-gray-600 tx-11"></div>
+                            </div>
+                          </div>
+                        </a>
+
                       </div>
                       <div class="notifications-footer">
                         <a href="#">Notificacion</a>
@@ -347,9 +354,9 @@
 
 
         <?php
-      
-          View::load("Card");
-       
+
+        View::load("Card");
+
         ?>
 
 
