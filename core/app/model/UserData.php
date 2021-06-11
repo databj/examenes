@@ -8,6 +8,7 @@ class UserData
 	{
 		$this->id = "";
 		$this->nombre = null;
+		$this->cc = null;
 		$this->usuario = null;
 		$this->pass = null;
 		
@@ -19,8 +20,8 @@ class UserData
 
 	public function add()
 	{
-		$sql = "insert into usuario (nombre,user,pass,is_admin) ";
-		$sql .= "value (\"$this->nombre\",\"$this->cc\",\"$this->email\",\"$this->telefono\",\"$this->rol\",\"$this->usuario\",\"$this->pass\",\"$this->is_admin\",\"$this->is_active\")";
+		$sql = "insert into usuario (nombre,cc,user,pass,is_admin) ";
+		$sql .= "value (\"$this->nombre\",\"$this->cc\",\"$this->user\",\"$this->pass\",\"$this->is_admin\")";
 		return Executor::doit($sql);
 	}
 
