@@ -25,9 +25,7 @@
                         <th>#</th>
                         <th>Nombre</th>
                         <th>Cedula</th>
-                        <th>Email</th>
-                        <th>Telefono </th>
-                        <th>Rol</th>
+                      
                         <th>User</th>
                         <th>Acciones</th>
 
@@ -51,9 +49,7 @@
                               <td><?php echo $cliente->id; ?></td>
                               <td><?php echo $cliente->nombre; ?></td>
                               <td><?php echo $cliente->cc; ?></td>
-                              <td><?php echo $cliente->email; ?></td>
-                              <td><?php echo $cliente->telefono; ?></td>
-                              <td><?php echo $cliente->rol; ?></td>
+                             
                               <td><?php echo $cliente->user; ?></td>
 
                               <td class="text-center table-actions">
@@ -92,9 +88,7 @@
                         <th>#</th>
                         <th>Nombre</th>
                         <th>Cedula</th>
-                        <th>Email</th>
-                        <th>Telefono </th>
-                        <th>Rol</th>
+                      
                         <th>User</th>
 
                         <th>Acciones</th>

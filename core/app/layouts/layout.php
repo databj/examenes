@@ -165,6 +165,27 @@
                 </ul>
               </li>
 
+              <li>
+                <a href="#"><i data-feather="list"></i>
+                  <span>USUARIOS</span><i class="accordion-icon fa fa-angle-left"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="index.php?view=User/Add_User">CREAR USUARIO</a></li>
+                  <li><a href="index.php?view=User/View_User">VER USUARIOS</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#"><i data-feather="list"></i>
+                  <span>PREGUNTAS</span><i class="accordion-icon fa fa-angle-left"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="index.php?view=Pregunta/Add">CREAR PREGUNTA</a></li>
+                  <li><a href="index.php?view=Pregunta/View">VER PREGUNTAS</a></li>
+                </ul>
+              </li>
+
+
+            
+
 
 
 
