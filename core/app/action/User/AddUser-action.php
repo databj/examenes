@@ -7,9 +7,7 @@ $user = new UserData();
 //INSERCION DE LOS DATOS AL OBJETO 
 $user->nombre = $_POST["nombre"];
 $user->cc = $_POST["cedula"];
-$user->email = $_POST["email"];
-$user->telefono = $_POST["telefono"];
-$user->rol = $_POST["rol"];
+
 $user->user = $_POST["username"];
 $user->pass = sha1(md5($_POST["password1"]));
 
@@ -18,14 +16,6 @@ if ($_POST["admin"] == "si") {
 } else {
         $user->is_admin = 0;
 }
-
-if ($_POST["activo"] == "si") {
-        $user->is_active = 1;
-} else {
-        $user->is_active = 0;
-}
-
-
 
 
 

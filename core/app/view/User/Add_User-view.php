@@ -48,49 +48,6 @@
                     </div>
 
 
-                    <div class="col-md-6 mb-3">
-                        <p>Email</p>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Email" name="email" id="email" aria-label="email" aria-describedby="basic-addon1" required>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-                        <p>Telefono</p>
-                        <div class="input-group mb-6">
-                            <input type="text" class="form-control" name="telefono" id="telefono" aria-label="Amount (to the nearest dollar)">
-                            <div class="input-group-append">
-                                <span class="input-group-text">#</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="col-md-6 mb-3">
-                        <p>Rol</p>
-
-                        <select class="custom-select" name="rol" id="rol" id="inputGroupSelect01">
-                            <option selected>ADMINISTRADOR</option>
-                            <option>EMPRESA</option>
-                            <option>GERENTE</option>
-                            <option>GERENTE OPERACIONES</option>
-                            <option>SUPERVISOR DE ALMACEN</option>
-                            <option>SUPERVISOR DE OPERACIONES LAVADO</option>
-                            <option>JEFE DE TALLER</option>
-                            <option>JEFE DE FACTURACION</option>
-                            <option>ASESOR VIP</option>
-                            <option>CONCIERGE</option>
-                            <option>EMPRESA</option>
-                        </select>
-                    </div>
-
 
                     <div class="col-md-6 mb-3">
                         <p>User</p>
@@ -152,59 +109,7 @@
                     </div>
 
 
-                    <div class="col-md-6 mb-3">
-                        <div class="col-md-4 mb-3">
-                            <label>Activo</label>
-                        </div>
-
-                        <div class="col-md-4 mg-t-20 mg-lg-t-0">
-                            <div class="custom-control custom-radio">
-                                <input name="activo" checked="" type="radio" value="si">
-                                <label>Si</label>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-md-4">
-                            <div class="custom-control custom-radio">
-                                <input name="activo" type="radio" value="no">
-                                <label>No</label>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!--   ---------------------------                         ----------------------     -->
-                    <?php
-                    $clientes = EmpresaData::getAll();
-                    ?>
-
-                    <div class="col-md-6 mb-3">
-                        <p>Dueño de Empresa</p>
-
-                        <select class="selectpicker form-control" data-hide-disabled="true" data-live-search="true" name="empresa" id="empresa" id="inputGroupSelect01">
-                            <option selected> </option>
-
-                            <?php
-                            if (count($clientes) > 0) {
-                            ?>
-
-
-
-                                <?php foreach ($clientes as $cliente) : ?>
-
-                                    <option value="<?php echo $cliente->id; ?>"><?php echo $cliente->nombre; ?></option>
-
-                                <?php endforeach; ?>
-                            <?php } ?>
-
-
-                        </select>
-                    </div>
-
-                    <!--   ---------------------------                         ----------------------     -->
+             
 
 
 
