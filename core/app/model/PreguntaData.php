@@ -52,11 +52,11 @@ class PreguntaData
 		return Model::one($query[0], new PreguntaData());
 	}
 
-	public static function getByIdCC($id)
+	public static function getByIdTema($id)
 	{
-		$sql = "select * from " . self::$tablename . " where cc='" . $id . "'";
+		$sql = "select * from " . self::$tablename . " where id_tema='" . $id . "'";
 		$query = Executor::doit($sql);
-		return Model::one($query[0], new PreguntaData());
+		return Model::many($query[0], new PreguntaData());
 	}
 
 
