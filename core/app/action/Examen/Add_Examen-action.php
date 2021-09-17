@@ -2,23 +2,32 @@
 
 $tema=TemaData::getById($_POST["tema"]);
 
-echo $_POST["tema"];
-
 $examen=new examenData();
 
-$examen->examen= $_POST["nombre"];
-$examen->examen= $_POST["fechainicio"];
-$examen->examen= $_POST["fechafin"];
+$examen->nombre= $_POST["nombre"];
+echo $examen->fecha_inicio=date_format(date_create($_POST["fechainicio"]), 'Y-m-d H:i:s');
+echo $examen->fecha_fin= date_format(date_create($_POST["fechafin"]), 'Y-m-d H:i:s');
 
-echo $_POST["nombre"];
-echo $_POST["fechainicio"];
-echo $_POST["fechafin"];
+
+
+$idExamen=$examen->add();
+
+ $idExamen[1];
+
+$preguntas= $_POST["preguntas"];
+
+foreach($preguntas as $preguntas){
+
+   $preguntasExamen=new PreguntaExamenData();
+   $preguntasExamen->id_examen= $idExamen[1];
+   $preguntasExamen->id_pregunta=$preguntas;
+
+   $aux=$preguntasExamen->add();
+
+  
+}
 
 /*
-$aux=$examen->add();
-
-$examen->id_tema=$tema->id;
-
 
 if($aux[0]==1){
 

@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="card-body collapse show" id="collapse7">
-            <form class="needs-validation" action="index.php?action=Examen/Add_Examen" method="post" novalidate>
+            <form class="needs-validation" action="index.php?view=Examen/Select_Preguntas" method="post" novalidate>
                 <div class="form-row">
 
                     <!--info oculta
@@ -38,7 +38,7 @@
                         <div class="input-group">
                             <div class="input-group-prepend" class="accordion-icon fa fa-calendar-o">
                             </div>
-                            <input onChange="cambios(this)" autocomplete="off" type="text" id="fechainicio" name="fechainicio" class="form-control datepicker-here" placeholder="Ingrese fecha" data-timepicker="true" data-time-format="hh:ii ">
+                            <input type="text" id="fechainicio" name="fechainicio" class="form-control datepicker-here" placeholder="Ingrese fecha" data-timepicker="true" data-time-format="hh:ii ">
                             <div class="invalid-feedback">
                                 por favor ingrese una fecha.
                             </div>
@@ -50,7 +50,7 @@
                         <div class="input-group">
                             <div class="input-group-prepend" class="accordion-icon fa fa-calendar-o">
                             </div>
-                            <input autocomplete="off" type="text" id="fechafin" name="fechafin" class="form-control datepicker-here" placeholder="Ingrese fecha" data-timepicker="true" data-time-format="hh:ii ">
+                            <input  type="text" id="fechafin" name="fechafin" class="form-control datepicker-here" placeholder="Ingrese fecha" data-timepicker="true" data-time-format="hh:ii ">
                             <div class="invalid-feedback">
                                 por favor ingrese una fecha.
                             </div>
