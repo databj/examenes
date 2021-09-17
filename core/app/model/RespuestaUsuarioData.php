@@ -10,6 +10,7 @@ class RespuestaUsuarioData
 		$this->id_pregunta = null;
 		$this->id_examen = null;
 		$this->id_respuesta = null;
+		$this->id_usuario = null;
 
 		
 	}
@@ -18,8 +19,8 @@ class RespuestaUsuarioData
 
 	public function add()
 	{
-		$sql = "insert into " . self::$tablename . " (id_pregunta,id_examen,id_respuesta) ";
-		$sql .= "value (\"$this->id_pregunta\",\"$this->id_examen\",\"$this->id_respuesta\")";
+		$sql = "insert into " . self::$tablename . " (id_pregunta,id_examen,id_respuesta,id_usuario) ";
+		$sql .= "value (\"$this->id_pregunta\",\"$this->id_examen\",\"$this->id_respuesta\",\"$this->id_usuario\")";
 		return Executor::doit($sql);
 	}
 

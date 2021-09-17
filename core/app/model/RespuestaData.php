@@ -59,7 +59,7 @@ class RespuestaData
 	{
 		$sql = "select * from " . self::$tablename . " where id_pregunta=$id";
 		$query = Executor::doit($sql);
-		return Model::one($query[0], new RespuestaData());
+		return Model::many($query[0], new RespuestaData());
 	}
 
 
