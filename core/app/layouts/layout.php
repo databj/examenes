@@ -192,7 +192,7 @@
                   <span>EXAMEN</span><i class="accordion-icon fa fa-angle-left"></i></a>
                 <ul class="sub-menu">
                   <li><a href="index.php?view=Examen/Add_Examen">CREAR EXAMEN</a></li>
-                  <li><a href="index.php?view=Examen/Add">AGREGAR ALUMNO EXAMEN</a></li>
+                  <li><a href="index.php?view=Examen/Add_EstudianteExamen">AGREGAR ALUMNO EXAMEN</a></li>
                 </ul>
               </li>
 
