@@ -5,8 +5,8 @@ $tema=TemaData::getById($_POST["tema"]);
 $examen=new examenData();
 
 $examen->nombre= $_POST["nombre"];
-echo $examen->fecha_inicio=date_format(date_create($_POST["fechainicio"]), 'Y-m-d H:i:s');
-echo $examen->fecha_fin= date_format(date_create($_POST["fechafin"]), 'Y-m-d H:i:s');
+$examen->fecha_inicio=date_format(date_create($_POST["fechainicio"]), 'Y-m-d H:i:s');
+$examen->fecha_fin= date_format(date_create($_POST["fechafin"]), 'Y-m-d H:i:s');
 
 
 

@@ -55,6 +55,12 @@ class RespuestaData
 		return Model::many($query[0], new RespuestaData());
 	}
 
+	public static function getByIdPregunta($id)
+	{
+		$sql = "select * from " . self::$tablename . " where id_pregunta=$id";
+		$query = Executor::doit($sql);
+		return Model::many($query[0], new RespuestaData());
+	}
 
 
 }

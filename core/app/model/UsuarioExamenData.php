@@ -70,4 +70,13 @@ class UsuarioExamenData
 		$query = Executor::doit($sql);
 		return Model::many($query[0], new UsuarioExamenData());
 	}
+
+	public static function getByIdUser($id)
+	{
+		$sql = "select * from " . self::$tablename . " where id_usuario=$id and estado=0";
+		$query = Executor::doit($sql);
+		return Model::one($query[0], new UsuarioExamenData());
+	}
+
+
 }

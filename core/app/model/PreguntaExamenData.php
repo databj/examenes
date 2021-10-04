@@ -70,4 +70,11 @@ class PreguntaExamenData
 		$query = Executor::doit($sql);
 		return Model::many($query[0], new PreguntaExamenData());
 	}
+
+	public static function getByIdExamen($id)
+	{
+		$sql = "select * from " . self::$tablename . " where id_examen=$id";
+		$query = Executor::doit($sql);
+		return Model::many($query[0], new PreguntaExamenData());
+	}
 }
