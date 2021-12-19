@@ -55,7 +55,7 @@
 
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/images/minovate-logo-color.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/LOGO_EXAMEN.png" type="image/x-icon">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -148,8 +148,8 @@
       <div class="page-sidebar">
         <div class="logo">
           <a class="logo-img" href="index.php?view=Card">
-            <img class="desktop-logo" src="assets/images/logo.png" alt="">
-            <img class="small-logo" src="assets/images/minovate-logo-color.png" alt="">
+            <img class="desktop-logo" src="assets/images/LOGO_EXAMEN.png" alt="">
+            <img class="small-logo" src="assets/images/LOGO_EXAMEN.png" alt="">
           </a>
           <i class="ion-ios-close-empty" id="sidebar-toggle-button-close"></i>
         </div>
