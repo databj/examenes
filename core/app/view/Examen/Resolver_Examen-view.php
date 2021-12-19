@@ -19,7 +19,7 @@
 
 
                     $usuarioExamen = UsuarioExamenData::getByIdUser($user->id);
-                    if ($usuarioExamen && $usuarioExamen->estado==0 ) {
+                    if ($usuarioExamen) {
                      $usuarioExamen->id;
                         $examen = ExamenData::getById($usuarioExamen->id_examen);
                          $examen->id;
@@ -34,7 +34,7 @@
                     <!--input type="text" style="display: none" id="activo" name="activo" value="<?php //echo $activo=0;
                                                                                                     ?>" readonly="true"  required /-->
                     <?php
-                    if ($usuarioExamen && $usuarioExamen->estado==0) {
+                    if ($usuarioExamen ) {
 
                         foreach ($preguntas_examen as $preguntas_examen) {
 

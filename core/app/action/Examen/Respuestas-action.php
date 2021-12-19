@@ -1,5 +1,6 @@
 <?php
 $user = UserData::getById($_SESSION["user_id"]);
+
 $usuario_examen= $_POST["usuarioExamen"];
 
 $respuestas = $_POST["respuesta"];
@@ -12,7 +13,7 @@ foreach ($respuestas as $key => $val) {
     
     echo $usuarioRespuesta->id_usuario = $user->id;
     echo "<br>";
-    echo $usuarioRespuesta->id_examen = $usuario_examen;
+    echo $usuarioRespuesta->id_usuario_examen = $usuario_examen;
     echo "<br>";
     echo $usuarioRespuesta->id_pregunta = $preguntas[$key];
     echo "<br>";
@@ -34,6 +35,8 @@ foreach ($respuestas as $key => $val) {
    
 
    echo "<br>";
+
+   
     //echo "Pregunta: ". $preguntas[$key] ." respuesta: ". $val ."<br>";
 
 

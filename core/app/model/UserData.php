@@ -20,8 +20,8 @@ class UserData
 
 	public function add()
 	{
-		$sql = "insert into usuario (nombre,cc,user,pass,is_admin) ";
-		$sql .= "value (\"$this->nombre\",\"$this->cc\",\"$this->user\",\"$this->pass\",\"$this->is_admin\")";
+		$sql = "insert into usuario (nombre,user,pass,is_admin) ";
+		$sql .= "value (\"$this->nombre\",\"$this->user\",\"$this->pass\",\"$this->is_admin\")";
 		return Executor::doit($sql);
 	}
 
